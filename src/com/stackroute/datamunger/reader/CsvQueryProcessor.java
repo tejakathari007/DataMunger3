@@ -19,9 +19,7 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
 
     }
 
-    public static void main(String[] args) {
-
-    }
+    
 
     /*
      * Implementation of getHeader() method. We will have to extract the headers
@@ -85,7 +83,7 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
         Object obj;
         int i = 0;
         String type = "";
-        BufferedReader br = new BufferedReader(new FileReader(fileName));
+       br = new BufferedReader(new FileReader(fileName));
         String headerRow = br.readLine();
         String headerArgs[] = headerRow.split(",");
         String secondRow = br.readLine();
