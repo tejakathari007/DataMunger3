@@ -49,8 +49,8 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
      * getDataRow() method will be used in the upcoming assignments
      */
 
-    @Override
-    public void getDataRow() {
+
+//    public void getDataRow() {
 //        BufferedReader br = null;
 //        String secondRow = "";
 //        try {
@@ -65,8 +65,8 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
 //            e.printStackTrace();
 //        }
 //        String[] dataRow = secondRow.split(",");
-
-    }
+//
+//    }
 
     /*
      * Implementation of getColumnType() method. To find out the data types, we will
@@ -121,4 +121,12 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
         return types;
 
     }
+
+
+
+	@Override
+	public void getDataRow() {
+		// TODO Auto-generated method stub
+		
+	}
 }
